@@ -1,0 +1,311 @@
+:root {
+  --blue: #2196f3;
+  --white: #ffffff;
+  --black: #212121;
+  --gray: #2f303a;
+  --light-gray: #757575;
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Body section */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+/* Header section */
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(236, 236, 2361);
+}
+
+.header__logo {
+  font-family: var(--logo-font);
+  font-weight: 700px;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.header__logo a {
+  text-decoration: none;
+}
+
+.header__logo span {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.header__logo b {
+  color: var(--black);
+}
+
+.header__navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.header__navigation a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header__navigation a:hover {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.header__contacts a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.header__contacts a:hover {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.header__contacts-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-decoration: none;
+}
+
+.header__contacts-item a:hover .icon {
+  stroke: var(--blue);
+  fill: var(--blue);
+}
+
+/* Hero section */
+
+.hero-section {
+  background-color: var(--gray);
+  display: flex;
+  background-image: linear-gradient(
+      to top rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg-image-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.hero__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--blue);
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid;
+  border-color: var(--blue);
+  margin-bottom: 200px;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+}
+
+/* What we do section */
+
+.whatwedo-section .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.whatwedo__skills {
+  height: 101px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 94px;
+  margin-bottom: 70px;
+}
+
+.whatwedo__skills-item {
+  width: 270px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--light-gray);
+}
+
+.whatwedo__skills-item strong {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+.whatwedo__visuals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatwedo__visuals-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whatwedo__visuals-img-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+/* Our Team section */
+
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.team-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--black);
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--black);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team__role {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--light-gray);
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 10px;
+}
+
+.team__card {
+  width: 270px;
+  height: 428px;
+  background-color: var(--white);
+}
+
+.team__socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team__socials .icon {
+  fill: rgba(175, 177, 184, 1);
+  stroke: rgba(175, 177, 184, 1);
+  width: 44px;
+}
+
+.team__socials li {
+  fill: var(--blue);
+}
+
+.team__socials li:hover .icon {
+  background-color: var(--blue);
+  fill: var(--white);
+  border-radius: 44px;
+  aspect-ratio: -0 deg;
+}
+
+/* default style */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: 10px;
+  height: 16px;
+}
